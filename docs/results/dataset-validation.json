@@ -1,0 +1,48 @@
+[
+  {
+    "dataset": "sift-128-euclidean",
+    "shapes": {
+      "distances": [
+        10000,
+        100
+      ],
+      "neighbors": [
+        10000,
+        100
+      ],
+      "test": [
+        10000,
+        128
+      ],
+      "train": [
+        1000000,
+        128
+      ]
+    },
+    "nonfinite": 0,
+    "zero_train_vectors": 0
+  },
+  {
+    "dataset": "glove-100-angular",
+    "shapes": {
+      "distances": [
+        10000,
+        100
+      ],
+      "neighbors": [
+        10000,
+        100
+      ],
+      "test": [
+        10000,
+        100
+      ],
+      "train": [
+        1183514,
+        100
+      ]
+    },
+    "nonfinite": 0,
+    "zero_train_vectors": 0
+  }
+]

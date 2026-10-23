@@ -16,6 +16,14 @@ jobs:
       - run: make setup lint test web scan
       - run: docker build -t atlas:test .
       - run: python3 scripts/container_smoke.py
+      - run: .venv/bin/pip install -r requirements-browser.txt
+      - run: .venv/bin/python -m playwright install --with-deps chromium ffmpeg
+      - run: PYTHONPATH=build:sdk .venv/bin/python scripts/review.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: atlas-runtime-evidence
+          path: docs/results/
   sanitizer:
     runs-on: ubuntu-24.04
     strategy:

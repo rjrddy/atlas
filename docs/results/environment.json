@@ -1,0 +1,11 @@
+{
+  "platform": "macOS-15.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.2",
+  "faiss": "1.15.1",
+  "numpy": "2.4.2",
+  "thread_env": {
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "timing": "single query calls, preconverted input; Python binding/result conversion included; three warm trials; no network; same process sequential builds, not isolated RSS"
+}

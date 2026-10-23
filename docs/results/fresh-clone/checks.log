@@ -1,0 +1,251 @@
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-dev.txt
+Collecting pip==26.2.2 (from -r requirements-dev.txt (line 1))
+  Using cached pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting pybind11==3.1.0 (from -r requirements-dev.txt (line 2))
+  Using cached pybind11-3.1.0-py3-none-any.whl.metadata (10 kB)
+Collecting numpy==2.4.2 (from -r requirements-dev.txt (line 3))
+  Using cached numpy-2.4.2-cp313-cp313-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting faiss-cpu==1.15.1 (from -r requirements-dev.txt (line 4))
+  Using cached faiss_cpu-1.15.1-cp310-abi3-macosx_14_0_arm64.whl.metadata (7.8 kB)
+Collecting h5py==3.15.1 (from -r requirements-dev.txt (line 5))
+  Using cached h5py-3.15.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (3.0 kB)
+Collecting grpcio==1.84.1 (from -r requirements-dev.txt (line 6))
+  Using cached grpcio-1.84.1-cp313-cp313-macosx_11_0_universal2.whl.metadata (3.8 kB)
+Collecting grpcio-tools==1.84.1 (from -r requirements-dev.txt (line 7))
+  Using cached grpcio_tools-1.84.1-cp313-cp313-macosx_11_0_universal2.whl.metadata (5.3 kB)
+Collecting pytest==9.1.1 (from -r requirements-dev.txt (line 8))
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting ruff==0.17.1 (from -r requirements-dev.txt (line 9))
+  Using cached ruff-0.17.1-py3-none-macosx_11_0_arm64.whl.metadata (20 kB)
+Collecting clang-format==20.1.8 (from -r requirements-dev.txt (line 10))
+  Using cached clang_format-20.1.8-py2.py3-none-macosx_11_0_arm64.whl.metadata (4.7 kB)
+Collecting pip-audit==2.9.0 (from -r requirements-dev.txt (line 11))
+  Using cached pip_audit-2.9.0-py3-none-any.whl.metadata (27 kB)
+Collecting packaging (from faiss-cpu==1.15.1->-r requirements-dev.txt (line 4))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting typing-extensions~=4.12 (from grpcio==1.84.1->-r requirements-dev.txt (line 6))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting protobuf<8.0.0,>=7.35.1 (from grpcio-tools==1.84.1->-r requirements-dev.txt (line 7))
+  Using cached protobuf-7.36.2-cp310-abi3-macosx_10_9_universal2.whl.metadata (595 bytes)
+Collecting setuptools>=77.0.1 (from grpcio-tools==1.84.1->-r requirements-dev.txt (line 7))
+  Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting iniconfig>=1.0.1 (from pytest==9.1.1->-r requirements-dev.txt (line 8))
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting pluggy<2,>=1.5 (from pytest==9.1.1->-r requirements-dev.txt (line 8))
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest==9.1.1->-r requirements-dev.txt (line 8))
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+Collecting cyclonedx-python-lib<10,>=5 (from pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached cyclonedx_python_lib-9.1.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting pip-api>=0.0.28 (from pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+Collecting pip-requirements-parser>=32.0.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting requests>=2.31.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting rich>=12.4 (from pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting toml>=0.10 (from pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting platformdirs>=4.2.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached msgpack-1.2.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (8.3 kB)
+Collecting filelock>=3.8.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting license-expression<31,>=30 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+Collecting py-serializable<3.0.0,>=2.0.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached charset_normalizer-3.5.2-cp313-cp313-macosx_10_13_universal2.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.0.0->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11))
+  Using cached defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+Using cached pip-26.2.2-py3-none-any.whl (1.8 MB)
+Using cached pybind11-3.1.0-py3-none-any.whl (319 kB)
+Using cached numpy-2.4.2-cp313-cp313-macosx_14_0_arm64.whl (5.2 MB)
+Using cached faiss_cpu-1.15.1-cp310-abi3-macosx_14_0_arm64.whl (5.0 MB)
+Using cached h5py-3.15.1-cp313-cp313-macosx_11_0_arm64.whl (2.8 MB)
+Using cached grpcio-1.84.1-cp313-cp313-macosx_11_0_universal2.whl (12.3 MB)
+Using cached grpcio_tools-1.84.1-cp313-cp313-macosx_11_0_universal2.whl (6.0 MB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached ruff-0.17.1-py3-none-macosx_11_0_arm64.whl (9.3 MB)
+Using cached clang_format-20.1.8-py2.py3-none-macosx_11_0_arm64.whl (1.4 MB)
+Using cached pip_audit-2.9.0-py3-none-any.whl (58 kB)
+Using cached cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+Using cached cyclonedx_python_lib-9.1.0-py3-none-any.whl (374 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pip_api-0.0.35-py3-none-any.whl (123 kB)
+Using cached pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+Using cached platformdirs-4.13.5-py3-none-any.whl (32 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached protobuf-7.36.2-cp310-abi3-macosx_10_9_universal2.whl (456 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Using cached setuptools-84.2.1-py3-none-any.whl (876 kB)
+Using cached toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached certifi-2026.10.23-py3-none-any.whl (135 kB)
+Using cached charset_normalizer-3.5.2-cp313-cp313-macosx_10_13_universal2.whl (366 kB)
+Using cached filelock-4.2.4-py3-none-any.whl (162 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached license_expression-30.4.4-py3-none-any.whl (120 kB)
+Using cached markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Using cached msgpack-1.2.3-cp313-cp313-macosx_11_0_arm64.whl (89 kB)
+Using cached packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+Using cached py_serializable-2.1.0-py3-none-any.whl (23 kB)
+Using cached sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Using cached boolean_py-5.0-py3-none-any.whl (26 kB)
+Using cached defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: sortedcontainers, clang-format, boolean.py, urllib3, typing-extensions, toml, setuptools, ruff, pyparsing, pygments, pybind11, protobuf, pluggy, platformdirs, pip, packaging, packageurl-python, numpy, msgpack, mdurl, license-expression, iniconfig, idna, filelock, defusedxml, charset_normalizer, certifi, requests, pytest, py-serializable, pip-requirements-parser, pip-api, markdown-it-py, h5py, grpcio, faiss-cpu, rich, grpcio-tools, cyclonedx-python-lib, CacheControl, pip-audit
+  Attempting uninstall: pip
+    Found existing installation: pip 25.0
+    Uninstalling pip-25.0:
+      Successfully uninstalled pip-25.0
+Successfully installed CacheControl-0.14.4 boolean.py-5.0 certifi-2026.10.23 charset_normalizer-3.5.2 clang-format-20.1.8 cyclonedx-python-lib-9.1.0 defusedxml-0.7.1 faiss-cpu-1.15.1 filelock-4.2.4 grpcio-1.84.1 grpcio-tools-1.84.1 h5py-3.15.1 idna-3.20 iniconfig-2.3.1 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 msgpack-1.2.3 numpy-2.4.2 packageurl-python-0.17.6 packaging-26.3 pip-26.2.2 pip-api-0.0.35 pip-audit-2.9.0 pip-requirements-parser-32.0.1 platformdirs-4.13.5 pluggy-1.7.0 protobuf-7.36.2 py-serializable-2.1.0 pybind11-3.1.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.1.1 requests-2.34.2 rich-15.0.0 ruff-0.17.1 setuptools-84.2.1 sortedcontainers-2.4.0 toml-0.10.2 typing-extensions-4.16.0 urllib3-2.8.0
+cd apps/web && npm ci
+
+added 22 packages, and audited 23 packages in 869ms
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+.venv/bin/clang-format --dry-run --Werror src/*.cpp src/*.hpp tests/*.cpp
+.venv/bin/ruff check scripts sdk/client.py tests
+All checks passed!
+.venv/bin/ruff format --check scripts sdk/client.py tests
+9 files already formatted
+cd apps/web && npm run lint
+
+> atlas-explorer@0.1.0 lint
+> tsc --noEmit && prettier --check src index.html package.json tsconfig.json
+
+Checking formatting...
+All matched files use Prettier code style!
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/atlas-fresh-nln_30wo/atlas/.venv/bin/python
+-- The CXX compiler identification is AppleClang 16.0.0.16000026
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found Python: /private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/atlas-fresh-nln_30wo/atlas/.venv/bin/python (found version "3.13.2") found components: Interpreter Development.Module
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Performing Test HAS_FLTO
+-- Performing Test HAS_FLTO - Success
+-- Found pybind11: /private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/atlas-fresh-nln_30wo/atlas/.venv/lib/python3.13/site-packages/pybind11/include (found version "3.1.0")
+-- Configuring done (1.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/atlas-fresh-nln_30wo/atlas/build
+cmake --build build -j 4
+[ 16%] Building CXX object CMakeFiles/atlas_core.dir/src/index.cpp.o
+[ 33%] Linking CXX static library libatlas_core.a
+[ 33%] Built target atlas_core
+[ 66%] Building CXX object CMakeFiles/core_tests.dir/tests/core.cpp.o
+[ 66%] Building CXX object CMakeFiles/atlas_native.dir/src/bindings.cpp.o
+[ 83%] Linking CXX executable core_tests
+[ 83%] Built target core_tests
+[100%] Linking CXX shared module atlas_native.cpython-313-darwin.so
+[100%] Built target atlas_native
+.venv/bin/python -m grpc_tools.protoc -I proto --python_out=sdk --grpc_python_out=sdk proto/atlas.proto
+./build/core_tests
+caught corrupted snapshot: snapshot checksum mismatch
+PASS 1000 randomized kernel/filter checks; full-probe/exact/HNSW, persistence, 8 concurrent readers x 200 pairs; kernel=NEON float32x4
+PYTHONPATH=build:sdk .venv/bin/python -m pytest -q
+....                                                                     [100%]
+4 passed in 3.23s
+.venv/bin/python scripts/data.py
+[
+  {
+    "dataset": "sift-128-euclidean",
+    "url": "https://ann-benchmarks.com/sift-128-euclidean.hdf5",
+    "sha256": "dd6f0a6ed6b7ebb8934680f861a33ed01ff33991eaee4fd60914d854a0ca5984",
+    "bytes": 525128288
+  },
+  {
+    "dataset": "glove-100-angular",
+    "url": "https://ann-benchmarks.com/glove-100-angular.hdf5",
+    "sha256": "544af1d5e84e112cd4749571dcfd8ca109818a572f850af75a3a09e093a953c4",
+    "bytes": 485413888
+  }
+]
+PYTHONPATH=build .venv/bin/python scripts/bench.py
+{"dataset": "sift-128-euclidean", "sha256": "dd6f0a6ed6b7ebb8934680f861a33ed01ff33991eaee4fd60914d854a0ca5984"}
+{"dataset": "sift-128-euclidean", "engine": "atlas", "algorithm": "hnsw", "effort": 10, "recall_at_10": 0.8405000000000001, "qps_trials": [52038.16596599883, 77618.38761978195, 87036.93608197868], "qps_median": 77618.38761978195, "p50_ms": 0.0130625, "p99_ms": 0.0282525}
+{"dataset": "sift-128-euclidean", "engine": "atlas", "algorithm": "hnsw", "effort": 32, "recall_at_10": 0.9754999999999999, "qps_trials": [30257.75823106233, 40098.57786206479, 47834.49579468097], "qps_median": 40098.57786206479, "p50_ms": 0.024437, "p99_ms": 0.046543499999999995}
+{"dataset": "sift-128-euclidean", "engine": "atlas", "algorithm": "hnsw", "effort": 80, "recall_at_10": 0.9945, "qps_trials": [20221.594324774578, 19749.8348053989, 20372.391153742356], "qps_median": 20221.594324774578, "p50_ms": 0.0502915, "p99_ms": 0.06542241}
+{"dataset": "sift-128-euclidean", "engine": "atlas", "algorithm": "hnsw", "effort": 200, "recall_at_10": 0.997, "qps_trials": [8119.313331304624, 7665.282830454454, 8941.461116758379], "qps_median": 8119.313331304624, "p50_ms": 0.11802099999999999, "p99_ms": 0.21225665999999999}
+{"dataset": "sift-128-euclidean", "engine": "atlas", "algorithm": "ivf", "effort": 1, "recall_at_10": 0.6175, "qps_trials": [48471.63013731598, 50385.232005377125, 51472.88376750103], "qps_median": 50385.232005377125, "p50_ms": 0.018625, "p99_ms": 0.03558508}
+{"dataset": "sift-128-euclidean", "engine": "atlas", "algorithm": "ivf", "effort": 4, "recall_at_10": 0.9545, "qps_trials": [17554.25366715034, 17457.7836573313, 17556.179931735576], "qps_median": 17554.25366715034, "p50_ms": 0.056458, "p99_ms": 0.08667934}
+{"dataset": "sift-128-euclidean", "engine": "atlas", "algorithm": "ivf", "effort": 16, "recall_at_10": 1.0, "qps_trials": [5045.058688442903, 4777.745268839266, 4550.405696257117], "qps_median": 4777.745268839266, "p50_ms": 0.196958, "p99_ms": 0.39254183999999975}
+{"dataset": "sift-128-euclidean", "engine": "atlas", "algorithm": "ivf", "effort": 32, "recall_at_10": 1.0, "qps_trials": [2453.8271637447438, 2309.2699457653475, 2397.025291844063], "qps_median": 2397.025291844063, "p50_ms": 0.408042, "p99_ms": 0.5581083299999999}
+{"dataset": "sift-128-euclidean", "engine": "faiss-hnsw", "algorithm": "hnsw", "effort": 10, "recall_at_10": 0.8530000000000001, "qps_trials": [71301.24934186952, 100694.38735878428, 110079.12227186072], "qps_median": 100694.38735878428, "p50_ms": 0.009708, "p99_ms": 0.022376249999999997}
+{"dataset": "sift-128-euclidean", "engine": "faiss-hnsw", "algorithm": "hnsw", "effort": 32, "recall_at_10": 0.9745, "qps_trials": [50227.593495810404, 54707.09298146278, 57366.173961609245], "qps_median": 54707.09298146278, "p50_ms": 0.018041, "p99_ms": 0.027675329999999995}
+{"dataset": "sift-128-euclidean", "engine": "faiss-hnsw", "algorithm": "hnsw", "effort": 80, "recall_at_10": 0.9975, "qps_trials": [24630.921093784666, 21588.170597708115, 18155.75480303688], "qps_median": 21588.170597708115, "p50_ms": 0.0413955, "p99_ms": 0.09763917}
+{"dataset": "sift-128-euclidean", "engine": "faiss-hnsw", "algorithm": "hnsw", "effort": 200, "recall_at_10": 0.9995, "qps_trials": [8732.210550569915, 7282.835060898127, 7725.72412126684], "qps_median": 7725.72412126684, "p50_ms": 0.11925, "p99_ms": 0.22509716999999999}
+{"dataset": "sift-128-euclidean", "engine": "faiss-ivf", "algorithm": "ivf", "effort": 1, "recall_at_10": 0.6025, "qps_trials": [78003.12116564975, 81031.79439200056, 82614.75668518605], "qps_median": 81031.79439200056, "p50_ms": 0.012459, "p99_ms": 0.018419489999999997}
+{"dataset": "sift-128-euclidean", "engine": "faiss-ivf", "algorithm": "ivf", "effort": 4, "recall_at_10": 0.9440000000000001, "qps_trials": [28769.047136449917, 28381.04058043932, 29693.78112771963], "qps_median": 28769.047136449917, "p50_ms": 0.034208, "p99_ms": 0.05629392}
+{"dataset": "sift-128-euclidean", "engine": "faiss-ivf", "algorithm": "ivf", "effort": 16, "recall_at_10": 1.0, "qps_trials": [9425.310978790612, 9415.512787062496, 9157.474329093297], "qps_median": 9415.512787062496, "p50_ms": 0.1088125, "p99_ms": 0.13301041}
+{"dataset": "sift-128-euclidean", "engine": "faiss-ivf", "algorithm": "ivf", "effort": 32, "recall_at_10": 1.0, "qps_trials": [4593.323451391985, 4755.201282919896, 4750.814897888034], "qps_median": 4750.814897888034, "p50_ms": 0.208167, "p99_ms": 0.25179892}
+{"dataset": "glove-100-angular", "sha256": "544af1d5e84e112cd4749571dcfd8ca109818a572f850af75a3a09e093a953c4"}
+{"dataset": "glove-100-angular", "engine": "atlas", "algorithm": "hnsw", "effort": 10, "recall_at_10": 0.5505, "qps_trials": [53873.27386740614, 77335.7843771883, 87552.90956892808], "qps_median": 77335.7843771883, "p50_ms": 0.013083, "p99_ms": 0.0275025}
+{"dataset": "glove-100-angular", "engine": "atlas", "algorithm": "hnsw", "effort": 32, "recall_at_10": 0.7495, "qps_trials": [33904.29251346472, 38592.03066252283, 39874.396051485615], "qps_median": 38592.03066252283, "p50_ms": 0.026334, "p99_ms": 0.03730141999999999}
+{"dataset": "glove-100-angular", "engine": "atlas", "algorithm": "hnsw", "effort": 80, "recall_at_10": 0.867, "qps_trials": [17030.819707623803, 17653.74331981068, 17479.079741623864], "qps_median": 17479.079741623864, "p50_ms": 0.0575625, "p99_ms": 0.07487542}
+{"dataset": "glove-100-angular", "engine": "atlas", "algorithm": "hnsw", "effort": 200, "recall_at_10": 0.9525, "qps_trials": [7460.98141228681, 7556.448866174584, 7558.733803716597], "qps_median": 7556.448866174584, "p50_ms": 0.134208, "p99_ms": 0.17083884000000002}
+{"dataset": "glove-100-angular", "engine": "atlas", "algorithm": "ivf", "effort": 1, "recall_at_10": 0.48450000000000004, "qps_trials": [60246.26174534889, 64297.47450845835, 63901.17241690469], "qps_median": 63901.17241690469, "p50_ms": 0.016, "p99_ms": 0.02904226}
+{"dataset": "glove-100-angular", "engine": "atlas", "algorithm": "ivf", "effort": 4, "recall_at_10": 0.7484999999999999, "qps_trials": [19901.901395568326, 21177.841605993784, 21773.25058235334], "qps_median": 21177.841605993784, "p50_ms": 0.0446665, "p99_ms": 0.12378915999999997}
+{"dataset": "glove-100-angular", "engine": "atlas", "algorithm": "ivf", "effort": 16, "recall_at_10": 0.9560000000000001, "qps_trials": [6478.8955494260845, 6386.1038511581, 6559.473935042684], "qps_median": 6478.8955494260845, "p50_ms": 0.152729, "p99_ms": 0.19735566}
+{"dataset": "glove-100-angular", "engine": "atlas", "algorithm": "ivf", "effort": 32, "recall_at_10": 1.0, "qps_trials": [3378.8231050600043, 3333.796339462194, 3498.832974315307], "qps_median": 3378.8231050600043, "p50_ms": 0.279875, "p99_ms": 0.5605615799999987}
+{"dataset": "glove-100-angular", "engine": "faiss-hnsw", "algorithm": "hnsw", "effort": 10, "recall_at_10": 0.5555, "qps_trials": [62207.60459357775, 81214.15031671869, 87965.24938619706], "qps_median": 81214.15031671869, "p50_ms": 0.0119585, "p99_ms": 0.028250420000000002}
+{"dataset": "glove-100-angular", "engine": "faiss-hnsw", "algorithm": "hnsw", "effort": 32, "recall_at_10": 0.7685, "qps_trials": [46222.2871575267, 46470.20453862093, 46279.337050722], "qps_median": 46279.337050722, "p50_ms": 0.021083499999999998, "p99_ms": 0.030046419999999997}
+{"dataset": "glove-100-angular", "engine": "faiss-hnsw", "algorithm": "hnsw", "effort": 80, "recall_at_10": 0.87, "qps_trials": [17102.78777463909, 15218.239079718614, 20415.106423940215], "qps_median": 17102.78777463909, "p50_ms": 0.0525835, "p99_ms": 0.11347107}
+{"dataset": "glove-100-angular", "engine": "faiss-hnsw", "algorithm": "hnsw", "effort": 200, "recall_at_10": 0.9455, "qps_trials": [7510.867389332155, 7680.270353297227, 7207.510296340385], "qps_median": 7510.867389332155, "p50_ms": 0.131667, "p99_ms": 0.2226124999999999}
+{"dataset": "glove-100-angular", "engine": "faiss-ivf", "algorithm": "ivf", "effort": 1, "recall_at_10": 0.4855, "qps_trials": [75945.77158308619, 79483.35786710569, 86441.3287290648], "qps_median": 79483.35786710569, "p50_ms": 0.012167, "p99_ms": 0.022459669999999998}
+{"dataset": "glove-100-angular", "engine": "faiss-ivf", "algorithm": "ivf", "effort": 4, "recall_at_10": 0.7575, "qps_trials": [30288.5010223064, 29480.22363682614, 32672.17355590746], "qps_median": 30288.5010223064, "p50_ms": 0.0318755, "p99_ms": 0.04889665999999998}
+{"dataset": "glove-100-angular", "engine": "faiss-ivf", "algorithm": "ivf", "effort": 16, "recall_at_10": 0.9575, "qps_trials": [9355.630907138193, 9476.913728084843, 9514.48355170024], "qps_median": 9476.913728084843, "p50_ms": 0.1058125, "p99_ms": 0.11996757999999999}
+{"dataset": "glove-100-angular", "engine": "faiss-ivf", "algorithm": "ivf", "effort": 32, "recall_at_10": 1.0, "qps_trials": [5355.660588542076, 5370.130761429136, 5267.963661052393], "qps_median": 5355.660588542076, "p50_ms": 0.18575, "p99_ms": 0.21738649999999995}
+cd apps/web && npm run build
+
+> atlas-explorer@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.64 kB │ gzip:  0.39 kB
+dist/assets/index-AQda3zvp.css   10.31 kB │ gzip:  2.86 kB
+dist/assets/index-DI-grije.js   208.57 kB │ gzip: 65.81 kB
+✓ built in 665ms

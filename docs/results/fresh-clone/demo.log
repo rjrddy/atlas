@@ -1,0 +1,79 @@
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-dev.txt
+Requirement already satisfied: pip==26.2.2 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 1)) (26.2.2)
+Requirement already satisfied: pybind11==3.1.0 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 2)) (3.1.0)
+Requirement already satisfied: numpy==2.4.2 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 3)) (2.4.2)
+Requirement already satisfied: faiss-cpu==1.15.1 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 4)) (1.15.1)
+Requirement already satisfied: h5py==3.15.1 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 5)) (3.15.1)
+Requirement already satisfied: grpcio==1.84.1 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 6)) (1.84.1)
+Requirement already satisfied: grpcio-tools==1.84.1 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 7)) (1.84.1)
+Requirement already satisfied: pytest==9.1.1 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 8)) (9.1.1)
+Requirement already satisfied: ruff==0.17.1 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 9)) (0.17.1)
+Requirement already satisfied: clang-format==20.1.8 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 10)) (20.1.8)
+Requirement already satisfied: pip-audit==2.9.0 in ./.venv/lib/python3.13/site-packages (from -r requirements-dev.txt (line 11)) (2.9.0)
+Requirement already satisfied: packaging in ./.venv/lib/python3.13/site-packages (from faiss-cpu==1.15.1->-r requirements-dev.txt (line 4)) (26.3)
+Requirement already satisfied: typing-extensions~=4.12 in ./.venv/lib/python3.13/site-packages (from grpcio==1.84.1->-r requirements-dev.txt (line 6)) (4.16.0)
+Requirement already satisfied: protobuf<8.0.0,>=7.35.1 in ./.venv/lib/python3.13/site-packages (from grpcio-tools==1.84.1->-r requirements-dev.txt (line 7)) (7.36.2)
+Requirement already satisfied: setuptools>=77.0.1 in ./.venv/lib/python3.13/site-packages (from grpcio-tools==1.84.1->-r requirements-dev.txt (line 7)) (84.2.1)
+Requirement already satisfied: iniconfig>=1.0.1 in ./.venv/lib/python3.13/site-packages (from pytest==9.1.1->-r requirements-dev.txt (line 8)) (2.3.1)
+Requirement already satisfied: pluggy<2,>=1.5 in ./.venv/lib/python3.13/site-packages (from pytest==9.1.1->-r requirements-dev.txt (line 8)) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in ./.venv/lib/python3.13/site-packages (from pytest==9.1.1->-r requirements-dev.txt (line 8)) (2.21.0)
+Requirement already satisfied: CacheControl>=0.13.0 in ./.venv/lib/python3.13/site-packages (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (0.14.4)
+Requirement already satisfied: cyclonedx-python-lib<10,>=5 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (9.1.0)
+Requirement already satisfied: pip-api>=0.0.28 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (0.0.35)
+Requirement already satisfied: pip-requirements-parser>=32.0.0 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (32.0.1)
+Requirement already satisfied: requests>=2.31.0 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (2.34.2)
+Requirement already satisfied: rich>=12.4 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (15.0.0)
+Requirement already satisfied: toml>=0.10 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (0.10.2)
+Requirement already satisfied: platformdirs>=4.2.0 in ./.venv/lib/python3.13/site-packages (from pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (4.13.5)
+Requirement already satisfied: license-expression<31,>=30 in ./.venv/lib/python3.13/site-packages (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (30.4.4)
+Requirement already satisfied: packageurl-python<2,>=0.11 in ./.venv/lib/python3.13/site-packages (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (0.17.6)
+Requirement already satisfied: py-serializable<3.0.0,>=2.0.0 in ./.venv/lib/python3.13/site-packages (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (2.1.0)
+Requirement already satisfied: sortedcontainers<3.0.0,>=2.4.0 in ./.venv/lib/python3.13/site-packages (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (2.4.0)
+Requirement already satisfied: boolean.py>=4.0 in ./.venv/lib/python3.13/site-packages (from license-expression<31,>=30->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (5.0)
+Requirement already satisfied: defusedxml<0.8.0,>=0.7.1 in ./.venv/lib/python3.13/site-packages (from py-serializable<3.0.0,>=2.0.0->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (0.7.1)
+Requirement already satisfied: msgpack<2.0.0,>=0.5.2 in ./.venv/lib/python3.13/site-packages (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (1.2.3)
+Requirement already satisfied: filelock>=3.8.0 in ./.venv/lib/python3.13/site-packages (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (4.2.4)
+Requirement already satisfied: pyparsing in ./.venv/lib/python3.13/site-packages (from pip-requirements-parser>=32.0.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (3.3.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./.venv/lib/python3.13/site-packages (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (3.5.2)
+Requirement already satisfied: idna<4,>=2.5 in ./.venv/lib/python3.13/site-packages (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (3.20)
+Requirement already satisfied: urllib3<3,>=1.26 in ./.venv/lib/python3.13/site-packages (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (2.8.0)
+Requirement already satisfied: certifi>=2023.5.7 in ./.venv/lib/python3.13/site-packages (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (2026.10.23)
+Requirement already satisfied: markdown-it-py>=2.2.0 in ./.venv/lib/python3.13/site-packages (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (4.2.0)
+Requirement already satisfied: mdurl~=0.1 in ./.venv/lib/python3.13/site-packages (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 11)) (0.1.2)
+cd apps/web && npm ci
+
+added 22 packages, and audited 23 packages in 901ms
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/atlas-fresh-nln_30wo/atlas/.venv/bin/python
+-- Found pybind11: /private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/atlas-fresh-nln_30wo/atlas/.venv/lib/python3.13/site-packages/pybind11/include (found version "3.1.0")
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/atlas-fresh-nln_30wo/atlas/build
+cmake --build build -j 4
+[ 33%] Built target atlas_core
+[ 66%] Built target core_tests
+[100%] Built target atlas_native
+.venv/bin/python -m grpc_tools.protoc -I proto --python_out=sdk --grpc_python_out=sdk proto/atlas.proto
+cd apps/web && npm run build
+
+> atlas-explorer@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.64 kB │ gzip:  0.39 kB
+dist/assets/index-AQda3zvp.css   10.31 kB │ gzip:  2.86 kB
+dist/assets/index-DI-grije.js   208.57 kB │ gzip: 65.81 kB
+✓ built in 508ms
+PYTHONPATH=build:sdk .venv/bin/python scripts/server.py
+{"event": "ready", "http": "http://127.0.0.1:18097", "grpc_port": 50074, "vectors": 2048}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
