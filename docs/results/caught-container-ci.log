@@ -1,0 +1,26 @@
+verify	Run python3 scripts/container_smoke.py	﻿2026-10-23T18:27:33.2983025Z ##[group]Run python3 scripts/container_smoke.py
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:33.2983388Z ^[[36;1mpython3 scripts/container_smoke.py^[[0m
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:33.3018527Z shell: /usr/bin/bash -e {0}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:33.3018835Z env:
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:33.3019179Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:33.3019589Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:33.3019960Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:33.3020298Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:33.3020618Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:33.3020952Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:33.3021235Z ##[endgroup]
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9683677Z Traceback (most recent call last):
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9735299Z   File "/home/runner/work/atlas/atlas/scripts/container_smoke.py", line 95, in <module>
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9735870Z     main()
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9736286Z     ~~~~^^
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9736677Z   File "/home/runner/work/atlas/atlas/scripts/container_smoke.py", line 64, in main
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9737414Z     (directory / "demo.atlas").write_bytes(payload)
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9737774Z     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9738215Z   File "/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/pathlib/_abc.py", line 641, in write_bytes
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9738671Z     with self.open(mode='wb') as f:
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9738922Z          ~~~~~~~~~^^^^^^^^^^^
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9739305Z   File "/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/pathlib/_local.py", line 537, in open
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9739770Z     return io.open(self, mode, buffering, encoding, errors, newline)
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9740245Z            ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9740670Z PermissionError: [Errno 13] Permission denied: '/tmp/tmpd93mmkoy/demo.atlas'
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:27:34.9834921Z ##[error]Process completed with exit code 1.

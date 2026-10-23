@@ -61,7 +61,9 @@ def main() -> None:
             docker("rm", NAME)
             payload = bytearray((directory / "demo.atlas").read_bytes())
             payload[100] ^= 1
-            (directory / "demo.atlas").write_bytes(payload)
+            damaged = directory / "damaged.atlas"
+            damaged.write_bytes(payload)
+            damaged.replace(directory / "demo.atlas")
             docker(
                 "run",
                 "-d",
