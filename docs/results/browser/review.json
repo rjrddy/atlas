@@ -1,5 +1,5 @@
 {
-  "elapsed_seconds": 92.66819866700098,
+  "elapsed_seconds": 92.21862225001678,
   "page_errors": [],
   "receipts": [
     {
@@ -58,7 +58,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.05925
+      "elapsed_ms": 0.178792
     },
     {
       "kind": "query",
@@ -116,7 +116,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.105542
+      "elapsed_ms": 0.154
     },
     {
       "kind": "query",
@@ -174,7 +174,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.143834
+      "elapsed_ms": 0.68725
     },
     {
       "kind": "query",
@@ -232,7 +232,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.02375
+      "elapsed_ms": 0.03975
     },
     {
       "kind": "query",
@@ -290,7 +290,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.0555
+      "elapsed_ms": 0.062667
     },
     {
       "kind": "query",
@@ -348,7 +348,7 @@
           "tag": 0
         }
       ],
-      "elapsed_ms": 0.020708
+      "elapsed_ms": 0.0365
     },
     {
       "kind": "query",
@@ -406,7 +406,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.060333
+      "elapsed_ms": 0.025208
     },
     {
       "kind": "query",
@@ -464,7 +464,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.04375
+      "elapsed_ms": 0.046084
     },
     {
       "kind": "caught-invalid-dimension",
@@ -526,7 +526,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.187
+      "elapsed_ms": 0.187958
     },
     {
       "kind": "live-sweep",
@@ -535,64 +535,64 @@
           "algorithm": "hnsw",
           "effort": 10,
           "recall": 0.9875,
-          "p50_ms": 0.008604500000000001,
-          "qps": 90716.31873178587,
+          "p50_ms": 0.0074789999999999995,
+          "qps": 112976.79739023598,
           "path": "hnsw"
         },
         {
           "algorithm": "hnsw",
           "effort": 24,
           "recall": 0.9875,
-          "p50_ms": 0.010937,
-          "qps": 85276.93685242826,
+          "p50_ms": 0.009479,
+          "qps": 91321.07347921874,
           "path": "hnsw"
         },
         {
           "algorithm": "hnsw",
           "effort": 64,
           "recall": 1.0,
-          "p50_ms": 0.0168125,
-          "qps": 56287.884384685465,
+          "p50_ms": 0.016334,
+          "qps": 58581.2356979405,
           "path": "hnsw"
         },
         {
           "algorithm": "hnsw",
           "effort": 160,
           "recall": 1.0,
-          "p50_ms": 0.029582999999999998,
-          "qps": 33587.12605458328,
+          "p50_ms": 0.0326255,
+          "qps": 30091.534687076248,
           "path": "hnsw"
         },
         {
           "algorithm": "ivf",
           "effort": 1,
           "recall": 0.75625,
-          "p50_ms": 0.005020999999999999,
-          "qps": 200941.9152276295,
+          "p50_ms": 0.004812500000000001,
+          "qps": 213100.34362430408,
           "path": "ivf"
         },
         {
           "algorithm": "ivf",
           "effort": 4,
           "recall": 0.96875,
-          "p50_ms": 0.0047705000000000004,
-          "qps": 204800.0,
+          "p50_ms": 0.0049169999999999995,
+          "qps": 203172.02321240364,
           "path": "ivf"
         },
         {
           "algorithm": "ivf",
           "effort": 16,
           "recall": 1.0,
-          "p50_ms": 0.007332999999999999,
-          "qps": 118299.44547134935,
+          "p50_ms": 0.006562500000000001,
+          "qps": 151420.5136940927,
           "path": "ivf"
         },
         {
           "algorithm": "ivf",
           "effort": 32,
           "recall": 1.0,
-          "p50_ms": 0.013167,
-          "qps": 65674.16583547801,
+          "p50_ms": 0.012563,
+          "qps": 55959.90472826219,
           "path": "ivf"
         }
       ],
@@ -655,7 +655,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.064917
+      "elapsed_ms": 0.174458
     },
     {
       "kind": "responsive",
@@ -733,7 +733,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.083208
+      "elapsed_ms": 0.121708
     },
     {
       "kind": "query",
@@ -791,7 +791,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.055208
+      "elapsed_ms": 0.033166
     },
     {
       "kind": "query",
@@ -849,7 +849,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.083625
+      "elapsed_ms": 0.078875
     },
     {
       "kind": "query",
@@ -907,7 +907,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.488792
+      "elapsed_ms": 0.238166
     },
     {
       "kind": "query",
@@ -965,7 +965,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.139834
+      "elapsed_ms": 0.1525
     },
     {
       "kind": "query",
@@ -1023,7 +1023,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.057125
+      "elapsed_ms": 0.195
     },
     {
       "kind": "query",
@@ -1081,7 +1081,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.091916
+      "elapsed_ms": 0.117333
     },
     {
       "kind": "query",
@@ -1139,7 +1139,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.120833
+      "elapsed_ms": 0.047542
     },
     {
       "kind": "query",
@@ -1197,7 +1197,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.074333
+      "elapsed_ms": 0.085208
     },
     {
       "kind": "query",
@@ -1255,7 +1255,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.025292
+      "elapsed_ms": 0.041667
     },
     {
       "kind": "query",
@@ -1313,7 +1313,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.117875
+      "elapsed_ms": 0.134542
     },
     {
       "kind": "query",
@@ -1371,7 +1371,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.18025
+      "elapsed_ms": 0.062458
     },
     {
       "kind": "query",
@@ -1429,7 +1429,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.346209
+      "elapsed_ms": 0.087959
     },
     {
       "kind": "query",
@@ -1487,7 +1487,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.053167
+      "elapsed_ms": 0.021834
     },
     {
       "kind": "query",
@@ -1545,7 +1545,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.099
+      "elapsed_ms": 1.077
     },
     {
       "kind": "query",
@@ -1603,7 +1603,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.02175
+      "elapsed_ms": 0.032209
     },
     {
       "kind": "query",
@@ -1661,7 +1661,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.086542
+      "elapsed_ms": 0.106917
     },
     {
       "kind": "query",
@@ -1719,7 +1719,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.025167
+      "elapsed_ms": 0.033416
     },
     {
       "kind": "query",
@@ -1777,7 +1777,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.080041
+      "elapsed_ms": 0.1365
     },
     {
       "kind": "query",
@@ -1835,7 +1835,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.02725
+      "elapsed_ms": 0.097291
     },
     {
       "kind": "query",
@@ -1893,7 +1893,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.067833
+      "elapsed_ms": 0.087041
     },
     {
       "kind": "query",
@@ -1951,7 +1951,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.248375
+      "elapsed_ms": 0.117083
     },
     {
       "kind": "query",
@@ -2009,7 +2009,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.168542
+      "elapsed_ms": 0.129292
     },
     {
       "kind": "query",
@@ -2067,7 +2067,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.035375
+      "elapsed_ms": 0.035667
     },
     {
       "kind": "query",
@@ -2125,7 +2125,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.135
+      "elapsed_ms": 0.082417
     },
     {
       "kind": "query",
@@ -2183,7 +2183,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.05625
+      "elapsed_ms": 0.025375
     },
     {
       "kind": "query",
@@ -2241,7 +2241,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.111833
+      "elapsed_ms": 0.098084
     },
     {
       "kind": "query",
@@ -2299,7 +2299,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.027959
+      "elapsed_ms": 0.048042
     },
     {
       "kind": "query",
@@ -2357,7 +2357,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.192916
+      "elapsed_ms": 0.204667
     },
     {
       "kind": "query",
@@ -2415,7 +2415,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.072041
+      "elapsed_ms": 0.041708
     },
     {
       "kind": "query",
@@ -2473,7 +2473,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.123792
+      "elapsed_ms": 0.182833
     },
     {
       "kind": "query",
@@ -2531,7 +2531,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.024666
+      "elapsed_ms": 0.068834
     },
     {
       "kind": "query",
@@ -2589,7 +2589,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.113917
+      "elapsed_ms": 0.151292
     },
     {
       "kind": "query",
@@ -2647,7 +2647,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.177166
+      "elapsed_ms": 0.084833
     },
     {
       "kind": "query",
@@ -2705,7 +2705,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.140083
+      "elapsed_ms": 0.133417
     },
     {
       "kind": "query",
@@ -2763,7 +2763,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.026083
+      "elapsed_ms": 0.021083
     },
     {
       "kind": "query",
@@ -2821,7 +2821,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.137625
+      "elapsed_ms": 0.139916
     },
     {
       "kind": "query",
@@ -2879,7 +2879,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.049334
+      "elapsed_ms": 0.037625
     },
     {
       "kind": "query",
@@ -2937,7 +2937,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.088709
+      "elapsed_ms": 0.118792
     },
     {
       "kind": "query",
@@ -2995,7 +2995,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.025167
+      "elapsed_ms": 0.050625
     },
     {
       "kind": "query",
@@ -3053,7 +3053,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.088083
+      "elapsed_ms": 0.143541
     },
     {
       "kind": "query",
@@ -3111,7 +3111,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.02825
+      "elapsed_ms": 0.046375
     },
     {
       "kind": "query",
@@ -3169,7 +3169,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.083709
+      "elapsed_ms": 0.103375
     },
     {
       "kind": "query",
@@ -3227,7 +3227,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.032292
+      "elapsed_ms": 0.028959
     },
     {
       "kind": "query",
@@ -3285,7 +3285,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.068333
+      "elapsed_ms": 0.643125
     },
     {
       "kind": "query",
@@ -3343,7 +3343,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.026459
+      "elapsed_ms": 0.041917
     },
     {
       "kind": "query",
@@ -3401,7 +3401,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.068459
+      "elapsed_ms": 0.188958
     },
     {
       "kind": "query",
@@ -3459,7 +3459,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.021667
+      "elapsed_ms": 0.076459
     },
     {
       "kind": "query",
@@ -3517,7 +3517,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.066209
+      "elapsed_ms": 0.12375
     },
     {
       "kind": "query",
@@ -3575,7 +3575,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.027833
+      "elapsed_ms": 0.046334
     },
     {
       "kind": "query",
@@ -3633,7 +3633,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.079625
+      "elapsed_ms": 0.09325
     },
     {
       "kind": "query",
@@ -3691,7 +3691,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.052292
+      "elapsed_ms": 0.051417
     },
     {
       "kind": "query",
@@ -3749,7 +3749,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.064917
+      "elapsed_ms": 0.133166
     },
     {
       "kind": "query",
@@ -3807,7 +3807,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.024667
+      "elapsed_ms": 0.02825
     },
     {
       "kind": "query",
@@ -3865,7 +3865,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.062625
+      "elapsed_ms": 0.106625
     },
     {
       "kind": "query",
@@ -3923,7 +3923,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.0225
+      "elapsed_ms": 0.03375
     },
     {
       "kind": "query",
@@ -3981,7 +3981,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.105041
+      "elapsed_ms": 0.100209
     },
     {
       "kind": "query",
@@ -4039,7 +4039,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.024375
+      "elapsed_ms": 0.130291
     },
     {
       "kind": "query",
@@ -4097,7 +4097,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.094792
+      "elapsed_ms": 0.129334
     },
     {
       "kind": "query",
@@ -4155,7 +4155,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.022
+      "elapsed_ms": 0.091666
     },
     {
       "kind": "query",
@@ -4213,7 +4213,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.081542
+      "elapsed_ms": 0.154417
     },
     {
       "kind": "query",
@@ -4271,7 +4271,7 @@
           "tag": 5
         }
       ],
-      "elapsed_ms": 0.022625
+      "elapsed_ms": 0.04375
     },
     {
       "kind": "query",
@@ -4329,7 +4329,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.084709
+      "elapsed_ms": 0.103
     },
     {
       "kind": "query",
@@ -4387,7 +4387,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.043208
+      "elapsed_ms": 0.0405
     }
   ]
 }

@@ -1,0 +1,29 @@
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/Users/rajreddy/dev/outreach/atlas/.venv/bin/python
+-- The CXX compiler identification is AppleClang 16.0.0.16000026
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found Python: /Users/rajreddy/dev/outreach/atlas/.venv/bin/python (found version "3.13.2") found components: Interpreter Development.Module
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Performing Test HAS_FLTO
+-- Performing Test HAS_FLTO - Success
+-- Found pybind11: /Users/rajreddy/dev/outreach/atlas/.venv/lib/python3.13/site-packages/pybind11/include (found version "3.1.0")
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/rajreddy/dev/outreach/atlas/build
+cmake --build build -j 4
+[ 16%] Building CXX object CMakeFiles/atlas_core.dir/src/index.cpp.o
+[ 33%] Linking CXX static library libatlas_core.a
+[ 33%] Built target atlas_core
+[ 50%] Building CXX object CMakeFiles/atlas_native.dir/src/bindings.cpp.o
+[ 66%] Building CXX object CMakeFiles/core_tests.dir/tests/core.cpp.o
+[ 83%] Linking CXX executable core_tests
+[ 83%] Built target core_tests
+[100%] Linking CXX shared module atlas_native.cpython-313-darwin.so
+[100%] Built target atlas_native

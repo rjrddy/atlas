@@ -1,0 +1,14 @@
+[
+  {
+    "dataset": "sift-128-euclidean",
+    "url": "https://ann-benchmarks.com/sift-128-euclidean.hdf5",
+    "sha256": "dd6f0a6ed6b7ebb8934680f861a33ed01ff33991eaee4fd60914d854a0ca5984",
+    "bytes": 525128288
+  },
+  {
+    "dataset": "glove-100-angular",
+    "url": "https://ann-benchmarks.com/glove-100-angular.hdf5",
+    "sha256": "544af1d5e84e112cd4749571dcfd8ca109818a572f850af75a3a09e093a953c4",
+    "bytes": 485413888
+  }
+]
