@@ -12,9 +12,8 @@ TOKEN = "container-test-token-only-123456789"
 
 
 def docker(*args: str, check: bool = True) -> str:
-    return subprocess.run(
-        ["docker", *args], check=check, capture_output=True, text=True
-    ).stdout.strip()
+    result = subprocess.run(["docker", *args], check=check, capture_output=True, text=True)
+    return (result.stdout + result.stderr if args[0] == "logs" else result.stdout).strip()
 
 
 def ready() -> dict:
@@ -77,7 +76,7 @@ def main() -> None:
             )
             code = docker("wait", NAME)
             log = docker("logs", NAME, check=False)
-            assert code != "0" and "checksum mismatch" in log
+            assert code != "0" and "checksum mismatch" in log, f"exit={code}, logs={log}"
             print(
                 json.dumps(
                     {

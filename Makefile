@@ -36,5 +36,5 @@ tsan:
 	cmake --build build-tsan -j 4
 	TSAN_OPTIONS=halt_on_error=1 ./build-tsan/core_tests
 scan:
-	$(PY) -m pip_audit -r requirements-dev.txt --progress-spinner off
+	$(PY) -m pip_audit -r requirements-dev.txt -r requirements-browser.txt -r requirements-plot.txt --progress-spinner off
 	cd apps/web && npm audit --audit-level=low

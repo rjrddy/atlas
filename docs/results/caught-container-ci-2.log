@@ -1,0 +1,20 @@
+verify	Run python3 scripts/container_smoke.py	﻿2026-10-23T18:30:18.9977788Z ##[group]Run python3 scripts/container_smoke.py
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:18.9978194Z ^[[36;1mpython3 scripts/container_smoke.py^[[0m
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:19.0041981Z shell: /usr/bin/bash -e {0}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:19.0042283Z env:
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:19.0042561Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:19.0043018Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:19.0043455Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:19.0043840Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:19.0044565Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:19.0044969Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:19.0045298Z ##[endgroup]
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:21.4729240Z Traceback (most recent call last):
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:21.4783250Z   File "/home/runner/work/atlas/atlas/scripts/container_smoke.py", line 97, in <module>
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:21.4784280Z     main()
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:21.4784760Z     ~~~~^^
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:21.4785436Z   File "/home/runner/work/atlas/atlas/scripts/container_smoke.py", line 80, in main
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:21.4786273Z     assert code != "0" and "checksum mismatch" in log
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:21.4786841Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:21.4787298Z AssertionError
+verify	Run python3 scripts/container_smoke.py	2026-10-23T18:30:21.4906166Z ##[error]Process completed with exit code 1.
