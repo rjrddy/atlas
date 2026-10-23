@@ -1,0 +1,14 @@
+# Prepared only; no service has been created. HTTPS terminates at Render.
+services:
+  - type: web
+    name: atlas-search
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ATLAS_TOKEN
+        generateValue: true
+      - key: ATLAS_HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: "8094"
