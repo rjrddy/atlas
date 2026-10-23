@@ -1,0 +1,268 @@
+{
+  "dataset": "sift-128-euclidean",
+  "available_base": 1000000,
+  "base_vectors": 1000000,
+  "dimensions": 128,
+  "query_count": 200,
+  "query_selection": "first test rows; full base up to --limit",
+  "metric": "squared L2",
+  "seed": 42,
+  "threads": 1,
+  "kernel": "NEON float32x4",
+  "ground_truth_seconds": 2.1938729169778526,
+  "builds": [
+    {
+      "engine": "atlas",
+      "seconds": 155.89077095908578,
+      "bytes": 664090008,
+      "bytes_per_vector": 664.090008,
+      "memory_kind": "C++ capacities incl both indexes, vectors once; excludes allocator/scratch/Python",
+      "serialized_bytes": 594369844,
+      "process_highwater_bytes_so_far": 1293565952
+    },
+    {
+      "engine": "faiss-hnsw",
+      "seconds": 130.35983266693074,
+      "bytes": 624360438,
+      "bytes_per_vector": 624.360438,
+      "memory_kind": "FAISS serialized bytes, not heap/RSS; separate index",
+      "serialized_bytes": 624360438,
+      "process_highwater_bytes_so_far": 1896005632
+    },
+    {
+      "engine": "faiss-ivf",
+      "seconds": 0.3826573749538511,
+      "bytes": 520016779,
+      "bytes_per_vector": 520.016779,
+      "memory_kind": "FAISS serialized bytes, not heap/RSS; separate index",
+      "serialized_bytes": 520016779,
+      "process_highwater_bytes_so_far": 2060779520
+    }
+  ],
+  "rows": [
+    {
+      "engine": "atlas",
+      "algorithm": "hnsw",
+      "effort": 10,
+      "recall_at_10": 0.645,
+      "qps_trials": [
+        2150.536662749614,
+        26433.467116724234,
+        31990.188031861875
+      ],
+      "qps_median": 26433.467116724234,
+      "p50_ms": 0.037896,
+      "p99_ms": 1.0344704099999995
+    },
+    {
+      "engine": "atlas",
+      "algorithm": "hnsw",
+      "effort": 32,
+      "recall_at_10": 0.8584999999999999,
+      "qps_trials": [
+        4822.240174864854,
+        11544.344701651746,
+        12843.015260630982
+      ],
+      "qps_median": 11544.344701651746,
+      "p50_ms": 0.08579200000000001,
+      "p99_ms": 0.34351292
+    },
+    {
+      "engine": "atlas",
+      "algorithm": "hnsw",
+      "effort": 80,
+      "recall_at_10": 0.9615,
+      "qps_trials": [
+        4413.6389129654835,
+        5729.297955963013,
+        5920.626662645159
+      ],
+      "qps_median": 5729.297955963013,
+      "p50_ms": 0.180604,
+      "p99_ms": 0.33261157999999985
+    },
+    {
+      "engine": "atlas",
+      "algorithm": "hnsw",
+      "effort": 200,
+      "recall_at_10": 0.99,
+      "qps_trials": [
+        2585.87667514645,
+        2664.6947915689952,
+        2631.7694017512904
+      ],
+      "qps_median": 2631.7694017512904,
+      "p50_ms": 0.37958349999999996,
+      "p99_ms": 0.6122483299999998
+    },
+    {
+      "engine": "atlas",
+      "algorithm": "ivf",
+      "effort": 1,
+      "recall_at_10": 0.691,
+      "qps_trials": [
+        240.01918934220936,
+        284.5657243865162,
+        244.45957821073992
+      ],
+      "qps_median": 244.45957821073992,
+      "p50_ms": 3.583271,
+      "p99_ms": 13.165760419999991
+    },
+    {
+      "engine": "atlas",
+      "algorithm": "ivf",
+      "effort": 4,
+      "recall_at_10": 0.9695000000000001,
+      "qps_trials": [
+        70.67799115254151,
+        72.07807642377173,
+        74.03531751889857
+      ],
+      "qps_median": 72.07807642377173,
+      "p50_ms": 13.417083,
+      "p99_ms": 31.750740749999984
+    },
+    {
+      "engine": "atlas",
+      "algorithm": "ivf",
+      "effort": 16,
+      "recall_at_10": 1.0,
+      "qps_trials": [
+        20.24626715695668,
+        20.608153832481495,
+        20.578071731513486
+      ],
+      "qps_median": 20.578071731513486,
+      "p50_ms": 48.727520999999996,
+      "p99_ms": 53.967687409999996
+    },
+    {
+      "engine": "atlas",
+      "algorithm": "ivf",
+      "effort": 32,
+      "recall_at_10": 1.0,
+      "qps_trials": [
+        10.114571353046387,
+        10.134033422798,
+        10.165334893951286
+      ],
+      "qps_median": 10.134033422798,
+      "p50_ms": 98.33212499999999,
+      "p99_ms": 105.26615459
+    },
+    {
+      "engine": "faiss-hnsw",
+      "algorithm": "hnsw",
+      "effort": 10,
+      "recall_at_10": 0.652,
+      "qps_trials": [
+        15562.082969686897,
+        38896.62781102443,
+        41214.092899335876
+      ],
+      "qps_median": 38896.62781102443,
+      "p50_ms": 0.027271,
+      "p99_ms": 0.10817492
+    },
+    {
+      "engine": "faiss-hnsw",
+      "algorithm": "hnsw",
+      "effort": 32,
+      "recall_at_10": 0.8665,
+      "qps_trials": [
+        12084.865909407821,
+        15612.34551168866,
+        16334.585889946058
+      ],
+      "qps_median": 15612.34551168866,
+      "p50_ms": 0.0634165,
+      "p99_ms": 0.12102333999999998
+    },
+    {
+      "engine": "faiss-hnsw",
+      "algorithm": "hnsw",
+      "effort": 80,
+      "recall_at_10": 0.9495000000000001,
+      "qps_trials": [
+        6178.942184521293,
+        7013.493752017441,
+        6764.488843768853
+      ],
+      "qps_median": 6764.488843768853,
+      "p50_ms": 0.1525205,
+      "p99_ms": 0.22549216999999996
+    },
+    {
+      "engine": "faiss-hnsw",
+      "algorithm": "hnsw",
+      "effort": 200,
+      "recall_at_10": 0.9854999999999999,
+      "qps_trials": [
+        2933.987124002119,
+        2981.946166571486,
+        3113.325032205672
+      ],
+      "qps_median": 2981.946166571486,
+      "p50_ms": 0.3284585,
+      "p99_ms": 0.481265
+    },
+    {
+      "engine": "faiss-ivf",
+      "algorithm": "ivf",
+      "effort": 1,
+      "recall_at_10": 0.6855000000000001,
+      "qps_trials": [
+        2533.180707886077,
+        2310.7485125441867,
+        2553.7864763849557
+      ],
+      "qps_median": 2533.180707886077,
+      "p50_ms": 0.3674995,
+      "p99_ms": 1.13233268
+    },
+    {
+      "engine": "faiss-ivf",
+      "algorithm": "ivf",
+      "effort": 4,
+      "recall_at_10": 0.9695000000000001,
+      "qps_trials": [
+        663.4200546001489,
+        682.4512894885605,
+        709.8609154455409
+      ],
+      "qps_median": 682.4512894885605,
+      "p50_ms": 1.4080415,
+      "p99_ms": 2.3846927499999984
+    },
+    {
+      "engine": "faiss-ivf",
+      "algorithm": "ivf",
+      "effort": 16,
+      "recall_at_10": 1.0,
+      "qps_trials": [
+        193.1294986021665,
+        193.87412703036546,
+        182.7534294737068
+      ],
+      "qps_median": 193.1294986021665,
+      "p50_ms": 5.0911045,
+      "p99_ms": 7.54641833
+    },
+    {
+      "engine": "faiss-ivf",
+      "algorithm": "ivf",
+      "effort": 32,
+      "recall_at_10": 1.0,
+      "qps_trials": [
+        87.21983398460846,
+        85.06779325622858,
+        81.23493072285883
+      ],
+      "qps_median": 85.06779325622858,
+      "p50_ms": 11.0327495,
+      "p99_ms": 22.783169819999998
+    }
+  ]
+}

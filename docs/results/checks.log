@@ -1,0 +1,28 @@
+.venv/bin/clang-format --dry-run --Werror src/*.cpp src/*.hpp tests/*.cpp
+.venv/bin/ruff check scripts sdk/client.py tests
+All checks passed!
+.venv/bin/ruff format --check scripts sdk/client.py tests
+7 files already formatted
+cd apps/web && npm run lint
+
+> atlas-explorer@0.1.0 lint
+> tsc --noEmit && prettier --check src index.html package.json tsconfig.json
+
+Checking formatting...
+All matched files use Prettier code style!
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/Users/rajreddy/dev/outreach/atlas/.venv/bin/python
+-- Found pybind11: /Users/rajreddy/dev/outreach/atlas/.venv/lib/python3.13/site-packages/pybind11/include (found version "3.1.0")
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/rajreddy/dev/outreach/atlas/build
+cmake --build build -j 4
+[ 33%] Built target atlas_core
+[ 66%] Built target core_tests
+[100%] Built target atlas_native
+.venv/bin/python -m grpc_tools.protoc -I proto --python_out=sdk --grpc_python_out=sdk proto/atlas.proto
+./build/core_tests
+caught corrupted snapshot: snapshot checksum mismatch
+PASS 1000 randomized kernel/filter checks; full-probe/exact/HNSW, persistence, 8 concurrent readers x 200 pairs; kernel=NEON float32x4
+PYTHONPATH=build:sdk .venv/bin/python -m pytest -q
+....                                                                     [100%]
+4 passed in 0.98s

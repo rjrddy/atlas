@@ -1,0 +1,9 @@
+{
+  "platform": "macOS-15.2-arm64-arm-64bit-Mach-O",
+  "cpu": "Apple M2 Pro",
+  "ram_bytes": 17179869184,
+  "compiler": "Apple clang version 16.0.0 (clang-1600.0.26.6)\nTarget: arm64-apple-darwin24.2.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "cmake": "cmake version 3.31.5\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+  "node": "v20.20.2\n",
+  "note": "Development laptop; background build/browser activity during benchmark; no CPU pinning or power-state control."
+}

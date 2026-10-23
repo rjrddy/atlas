@@ -1,7 +1,7 @@
 SHELL := /bin/sh
 PY := .venv/bin/python
 BUILD ?= build
-.PHONY: setup build lint test bench demo asan tsan scan proto web
+.PHONY: setup build lint test bench data demo asan tsan scan proto web
 setup:
 	python3 -m venv .venv
 	$(PY) -m pip install -r requirements-dev.txt
@@ -21,7 +21,9 @@ lint:
 test: build proto
 	./$(BUILD)/core_tests
 	PYTHONPATH=$(BUILD):sdk $(PY) -m pytest -q
-bench: build
+data:
+	$(PY) scripts/data.py
+bench: build data
 	PYTHONPATH=$(BUILD) $(PY) scripts/bench.py
 demo: setup build proto web
 	PYTHONPATH=$(BUILD):sdk $(PY) scripts/server.py

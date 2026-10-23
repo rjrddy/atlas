@@ -1,0 +1,2 @@
+caught corrupted snapshot: snapshot checksum mismatch
+PASS 1000 randomized kernel/filter checks; full-probe/exact/HNSW, persistence, 8 concurrent readers x 200 pairs; kernel=NEON float32x4
