@@ -2,7 +2,7 @@
   "project": "atlas",
   "motion_profile": "Search reticle registration",
   "source_sha256": {
-    "apps/web/src/motion.ts": "a8adc4f91ed7567e8ff6f4f3e979342732aa485000a876daf8c8d51a42c1b611",
+    "apps/web/src/motion.ts": "02b9c91abc103c7c4b8064b7479295a803befa07abdee360f6d7c458a64bdea2",
     "apps/web/src/style.css": "332d74d066b300e6412e833c285efa2a28d2ef8535964306323944b2c077abdb"
   },
   "frontend_build_lint": "passed",

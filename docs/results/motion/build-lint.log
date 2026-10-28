@@ -1,6 +1,6 @@
-src/motion.ts 59ms
-src/main.tsx 65ms (unchanged)
-src/style.css 54ms (unchanged)
+src/motion.ts 63ms
+src/main.tsx 66ms (unchanged)
+src/style.css 46ms (unchanged)
 
 > atlas-explorer@0.1.0 lint
 > tsc --noEmit && prettier --check src index.html package.json tsconfig.json
@@ -16,7 +16,7 @@ transforming...
 ✓ 29 modules transformed.
 rendering chunks...
 computing gzip size...
-dist/index.html                   0.64 kB │ gzip:  0.39 kB
+dist/index.html                   0.64 kB │ gzip:  0.40 kB
 dist/assets/index-CRcdY0IV.css   10.45 kB │ gzip:  2.90 kB
-dist/assets/index-y9IqscAl.js   212.23 kB │ gzip: 67.17 kB
-✓ built in 528ms
+dist/assets/index-BZKCJ-PP.js   212.24 kB │ gzip: 67.19 kB
+✓ built in 545ms

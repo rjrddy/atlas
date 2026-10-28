@@ -1,5 +1,5 @@
 {
-  "elapsed_seconds": 3.4008956250036135,
+  "elapsed_seconds": 3.6782312500290573,
   "page_errors": [],
   "receipts": [
     {
@@ -58,7 +58,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.058666
+      "elapsed_ms": 0.054208
     },
     {
       "kind": "query",
@@ -116,7 +116,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.03675
+      "elapsed_ms": 0.03475
     },
     {
       "kind": "query",
@@ -174,7 +174,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.046708
+      "elapsed_ms": 0.38375
     },
     {
       "kind": "query",
@@ -232,7 +232,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.021166
+      "elapsed_ms": 0.045917
     },
     {
       "kind": "query",
@@ -290,7 +290,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.160583
+      "elapsed_ms": 0.061417
     },
     {
       "kind": "query",
@@ -348,7 +348,7 @@
           "tag": 0
         }
       ],
-      "elapsed_ms": 0.037666
+      "elapsed_ms": 0.04025
     },
     {
       "kind": "query",
@@ -406,7 +406,7 @@
           "tag": 3
         }
       ],
-      "elapsed_ms": 0.023
+      "elapsed_ms": 0.141125
     },
     {
       "kind": "query",
@@ -464,7 +464,7 @@
           "tag": 7
         }
       ],
-      "elapsed_ms": 0.049416
+      "elapsed_ms": 0.048125
     },
     {
       "kind": "caught-invalid-dimension",
@@ -526,7 +526,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.082833
+      "elapsed_ms": 0.148208
     },
     {
       "kind": "live-sweep",
@@ -535,64 +535,64 @@
           "algorithm": "hnsw",
           "effort": 10,
           "recall": 0.9875,
-          "p50_ms": 0.0068544999999999995,
-          "qps": 125613.34641805693,
+          "p50_ms": 0.0109585,
+          "qps": 58706.76338605934,
           "path": "hnsw"
         },
         {
           "algorithm": "hnsw",
           "effort": 24,
           "recall": 0.9875,
-          "p50_ms": 0.011875,
-          "qps": 72645.3815698667,
+          "p50_ms": 0.0129995,
+          "qps": 69464.3430843905,
           "path": "hnsw"
         },
         {
           "algorithm": "hnsw",
           "effort": 64,
           "recall": 1.0,
-          "p50_ms": 0.018146,
-          "qps": 52423.09368334486,
+          "p50_ms": 0.018520500000000002,
+          "qps": 44844.30617450041,
           "path": "hnsw"
         },
         {
           "algorithm": "hnsw",
           "effort": 160,
           "recall": 1.0,
-          "p50_ms": 0.032646,
-          "qps": 30348.610697505916,
+          "p50_ms": 0.0391255,
+          "qps": 23200.947758715945,
           "path": "hnsw"
         },
         {
           "algorithm": "ivf",
           "effort": 1,
           "recall": 0.75625,
-          "p50_ms": 0.005062499999999999,
-          "qps": 201992.14755526377,
+          "p50_ms": 0.005416,
+          "qps": 184268.1101001958,
           "path": "ivf"
         },
         {
           "algorithm": "ivf",
           "effort": 4,
           "recall": 0.96875,
-          "p50_ms": 0.0051459999999999995,
-          "qps": 197022.497506434,
+          "p50_ms": 0.0051255,
+          "qps": 194431.9548917865,
           "path": "ivf"
         },
         {
           "algorithm": "ivf",
           "effort": 16,
           "recall": 1.0,
-          "p50_ms": 0.007042,
-          "qps": 142328.49416453173,
+          "p50_ms": 0.007020500000000001,
+          "qps": 143875.83515426188,
           "path": "ivf"
         },
         {
           "algorithm": "ivf",
           "effort": 32,
           "recall": 1.0,
-          "p50_ms": 0.012209,
-          "qps": 81667.65348414627,
+          "p50_ms": 0.013125,
+          "qps": 73128.8164101064,
           "path": "ivf"
         }
       ],
@@ -655,7 +655,7 @@
           "tag": 1
         }
       ],
-      "elapsed_ms": 0.062208
+      "elapsed_ms": 0.085458
     },
     {
       "kind": "responsive",
