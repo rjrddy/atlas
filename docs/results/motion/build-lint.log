@@ -1,0 +1,22 @@
+src/motion.ts 59ms
+src/main.tsx 65ms (unchanged)
+src/style.css 54ms (unchanged)
+
+> atlas-explorer@0.1.0 lint
+> tsc --noEmit && prettier --check src index.html package.json tsconfig.json
+
+Checking formatting...
+All matched files use Prettier code style!
+
+> atlas-explorer@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 29 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.64 kB │ gzip:  0.39 kB
+dist/assets/index-CRcdY0IV.css   10.45 kB │ gzip:  2.90 kB
+dist/assets/index-y9IqscAl.js   212.23 kB │ gzip: 67.17 kB
+✓ built in 528ms

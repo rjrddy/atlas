@@ -37,6 +37,9 @@ make lint test bench
 
 ## Decisions and limits
 
+Contextual motion uses finite transform-only responses to real controls and changed evidence, with live reduced-motion cancellation. See [motion design and validation](docs/MOTION.md); frame rate is not measured.
+
+
 - Immutable C++ core, SIMD NEON/SSE2, portable persistence; Python implements the gRPC boundary. Filtered HNSW explicitly falls back to exact eligible search. IVF filtering remains approximate within probed lists. [Design](docs/DESIGN.md), [ADRs](docs/adr/).
 - The measured curves include FAISS and every timing trial. At equal ef on SIFT, FAISS records 94.95% recall and 6,764 QPS; on GloVe ef=200, 80.55% and 2,593 QPS. Equal effort does not mean equal recall. Atlas's simple IVF baseline is much slower; the complete curves retain that result. No general speed advantage is claimed.
 - Single-thread single-query binding calls; network excluded. This development laptop had background work and uncontrolled power/cache state. Large trial spreads remain visible. The fixed leading test-query sample does not establish general workload performance. Service QPS and internet latency are **not measured**.

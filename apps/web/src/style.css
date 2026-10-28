@@ -831,3 +831,14 @@ footer a {
     scroll-behavior: auto !important;
   }
 }
+
+/* Motion is event-driven in motion.ts/js; resting content is always visible. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

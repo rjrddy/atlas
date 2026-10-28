@@ -1,0 +1,681 @@
+{
+  "elapsed_seconds": 3.4008956250036135,
+  "page_errors": [],
+  "receipts": [
+    {
+      "kind": "query",
+      "path": "hnsw",
+      "recall": 1.0,
+      "neighbors": [
+        {
+          "id": 17,
+          "squared_l2": 0.0,
+          "tag": 1
+        },
+        {
+          "id": 577,
+          "squared_l2": 20.050260543823242,
+          "tag": 1
+        },
+        {
+          "id": 945,
+          "squared_l2": 27.15900421142578,
+          "tag": 1
+        },
+        {
+          "id": 1569,
+          "squared_l2": 28.303030014038086,
+          "tag": 1
+        },
+        {
+          "id": 1785,
+          "squared_l2": 28.436344146728516,
+          "tag": 1
+        },
+        {
+          "id": 1625,
+          "squared_l2": 28.505887985229492,
+          "tag": 1
+        },
+        {
+          "id": 857,
+          "squared_l2": 29.68876075744629,
+          "tag": 1
+        },
+        {
+          "id": 657,
+          "squared_l2": 30.724510192871094,
+          "tag": 1
+        },
+        {
+          "id": 1665,
+          "squared_l2": 31.293670654296875,
+          "tag": 1
+        },
+        {
+          "id": 1201,
+          "squared_l2": 32.20893859863281,
+          "tag": 1
+        }
+      ],
+      "elapsed_ms": 0.058666
+    },
+    {
+      "kind": "query",
+      "path": "ivf",
+      "recall": 1.0,
+      "neighbors": [
+        {
+          "id": 17,
+          "squared_l2": 0.0,
+          "tag": 1
+        },
+        {
+          "id": 577,
+          "squared_l2": 20.050260543823242,
+          "tag": 1
+        },
+        {
+          "id": 945,
+          "squared_l2": 27.15900421142578,
+          "tag": 1
+        },
+        {
+          "id": 1569,
+          "squared_l2": 28.303030014038086,
+          "tag": 1
+        },
+        {
+          "id": 1785,
+          "squared_l2": 28.436344146728516,
+          "tag": 1
+        },
+        {
+          "id": 1625,
+          "squared_l2": 28.505887985229492,
+          "tag": 1
+        },
+        {
+          "id": 857,
+          "squared_l2": 29.68876075744629,
+          "tag": 1
+        },
+        {
+          "id": 657,
+          "squared_l2": 30.724510192871094,
+          "tag": 1
+        },
+        {
+          "id": 1665,
+          "squared_l2": 31.293670654296875,
+          "tag": 1
+        },
+        {
+          "id": 1201,
+          "squared_l2": 32.20893859863281,
+          "tag": 1
+        }
+      ],
+      "elapsed_ms": 0.03675
+    },
+    {
+      "kind": "query",
+      "path": "ivf",
+      "recall": 1.0,
+      "neighbors": [
+        {
+          "id": 17,
+          "squared_l2": 0.0,
+          "tag": 1
+        },
+        {
+          "id": 577,
+          "squared_l2": 20.050260543823242,
+          "tag": 1
+        },
+        {
+          "id": 945,
+          "squared_l2": 27.15900421142578,
+          "tag": 1
+        },
+        {
+          "id": 1569,
+          "squared_l2": 28.303030014038086,
+          "tag": 1
+        },
+        {
+          "id": 1785,
+          "squared_l2": 28.436344146728516,
+          "tag": 1
+        },
+        {
+          "id": 1625,
+          "squared_l2": 28.505887985229492,
+          "tag": 1
+        },
+        {
+          "id": 857,
+          "squared_l2": 29.68876075744629,
+          "tag": 1
+        },
+        {
+          "id": 657,
+          "squared_l2": 30.724510192871094,
+          "tag": 1
+        },
+        {
+          "id": 1665,
+          "squared_l2": 31.293670654296875,
+          "tag": 1
+        },
+        {
+          "id": 1201,
+          "squared_l2": 32.20893859863281,
+          "tag": 1
+        }
+      ],
+      "elapsed_ms": 0.046708
+    },
+    {
+      "kind": "query",
+      "path": "exact",
+      "recall": 1.0,
+      "neighbors": [
+        {
+          "id": 17,
+          "squared_l2": 0.0,
+          "tag": 1
+        },
+        {
+          "id": 577,
+          "squared_l2": 20.050260543823242,
+          "tag": 1
+        },
+        {
+          "id": 945,
+          "squared_l2": 27.15900421142578,
+          "tag": 1
+        },
+        {
+          "id": 1569,
+          "squared_l2": 28.303030014038086,
+          "tag": 1
+        },
+        {
+          "id": 1785,
+          "squared_l2": 28.436344146728516,
+          "tag": 1
+        },
+        {
+          "id": 1625,
+          "squared_l2": 28.505887985229492,
+          "tag": 1
+        },
+        {
+          "id": 857,
+          "squared_l2": 29.68876075744629,
+          "tag": 1
+        },
+        {
+          "id": 657,
+          "squared_l2": 30.724510192871094,
+          "tag": 1
+        },
+        {
+          "id": 1665,
+          "squared_l2": 31.293670654296875,
+          "tag": 1
+        },
+        {
+          "id": 1201,
+          "squared_l2": 32.20893859863281,
+          "tag": 1
+        }
+      ],
+      "elapsed_ms": 0.021166
+    },
+    {
+      "kind": "query",
+      "path": "hnsw",
+      "recall": 1.0,
+      "neighbors": [
+        {
+          "id": 17,
+          "squared_l2": 0.0,
+          "tag": 1
+        },
+        {
+          "id": 577,
+          "squared_l2": 20.050260543823242,
+          "tag": 1
+        },
+        {
+          "id": 945,
+          "squared_l2": 27.15900421142578,
+          "tag": 1
+        },
+        {
+          "id": 1569,
+          "squared_l2": 28.303030014038086,
+          "tag": 1
+        },
+        {
+          "id": 1785,
+          "squared_l2": 28.436344146728516,
+          "tag": 1
+        },
+        {
+          "id": 1625,
+          "squared_l2": 28.505887985229492,
+          "tag": 1
+        },
+        {
+          "id": 857,
+          "squared_l2": 29.68876075744629,
+          "tag": 1
+        },
+        {
+          "id": 657,
+          "squared_l2": 30.724510192871094,
+          "tag": 1
+        },
+        {
+          "id": 1665,
+          "squared_l2": 31.293670654296875,
+          "tag": 1
+        },
+        {
+          "id": 1201,
+          "squared_l2": 32.20893859863281,
+          "tag": 1
+        }
+      ],
+      "elapsed_ms": 0.160583
+    },
+    {
+      "kind": "query",
+      "path": "exact-filtered",
+      "recall": 1.0,
+      "neighbors": [
+        {
+          "id": 1560,
+          "squared_l2": 375.80865478515625,
+          "tag": 0
+        },
+        {
+          "id": 856,
+          "squared_l2": 413.53955078125,
+          "tag": 0
+        },
+        {
+          "id": 48,
+          "squared_l2": 416.24462890625,
+          "tag": 0
+        },
+        {
+          "id": 472,
+          "squared_l2": 417.666748046875,
+          "tag": 0
+        },
+        {
+          "id": 696,
+          "squared_l2": 426.0898132324219,
+          "tag": 0
+        },
+        {
+          "id": 464,
+          "squared_l2": 430.145751953125,
+          "tag": 0
+        },
+        {
+          "id": 1368,
+          "squared_l2": 430.21173095703125,
+          "tag": 0
+        },
+        {
+          "id": 128,
+          "squared_l2": 436.6080322265625,
+          "tag": 0
+        },
+        {
+          "id": 1200,
+          "squared_l2": 438.5292053222656,
+          "tag": 0
+        },
+        {
+          "id": 416,
+          "squared_l2": 445.8323974609375,
+          "tag": 0
+        }
+      ],
+      "elapsed_ms": 0.037666
+    },
+    {
+      "kind": "query",
+      "path": "exact-filtered",
+      "recall": 1.0,
+      "neighbors": [
+        {
+          "id": 1827,
+          "squared_l2": 310.25238037109375,
+          "tag": 3
+        },
+        {
+          "id": 1219,
+          "squared_l2": 334.0941162109375,
+          "tag": 3
+        },
+        {
+          "id": 1403,
+          "squared_l2": 337.7351379394531,
+          "tag": 3
+        },
+        {
+          "id": 27,
+          "squared_l2": 343.5066223144531,
+          "tag": 3
+        },
+        {
+          "id": 1667,
+          "squared_l2": 347.58245849609375,
+          "tag": 3
+        },
+        {
+          "id": 1347,
+          "squared_l2": 348.81658935546875,
+          "tag": 3
+        },
+        {
+          "id": 1051,
+          "squared_l2": 351.1147766113281,
+          "tag": 3
+        },
+        {
+          "id": 171,
+          "squared_l2": 364.5206604003906,
+          "tag": 3
+        },
+        {
+          "id": 803,
+          "squared_l2": 369.76409912109375,
+          "tag": 3
+        },
+        {
+          "id": 1187,
+          "squared_l2": 369.8157653808594,
+          "tag": 3
+        }
+      ],
+      "elapsed_ms": 0.023
+    },
+    {
+      "kind": "query",
+      "path": "exact-filtered",
+      "recall": 1.0,
+      "neighbors": [
+        {
+          "id": 1215,
+          "squared_l2": 508.51751708984375,
+          "tag": 7
+        },
+        {
+          "id": 1503,
+          "squared_l2": 591.5303955078125,
+          "tag": 7
+        },
+        {
+          "id": 1223,
+          "squared_l2": 598.4937133789062,
+          "tag": 7
+        },
+        {
+          "id": 1919,
+          "squared_l2": 609.7646484375,
+          "tag": 7
+        },
+        {
+          "id": 1575,
+          "squared_l2": 611.1574096679688,
+          "tag": 7
+        },
+        {
+          "id": 1639,
+          "squared_l2": 617.37744140625,
+          "tag": 7
+        },
+        {
+          "id": 367,
+          "squared_l2": 622.3119506835938,
+          "tag": 7
+        },
+        {
+          "id": 1543,
+          "squared_l2": 624.7978515625,
+          "tag": 7
+        },
+        {
+          "id": 1351,
+          "squared_l2": 627.1235961914062,
+          "tag": 7
+        },
+        {
+          "id": 1799,
+          "squared_l2": 627.8802490234375,
+          "tag": 7
+        }
+      ],
+      "elapsed_ms": 0.049416
+    },
+    {
+      "kind": "caught-invalid-dimension",
+      "text": "CONNECTION / INPUT REJECTED \u2014 Error: vector requires 24 finite numeric coordinates"
+    },
+    {
+      "kind": "query",
+      "path": "hnsw",
+      "recall": 0.9,
+      "neighbors": [
+        {
+          "id": 1827,
+          "squared_l2": 120.147216796875,
+          "tag": 3
+        },
+        {
+          "id": 1147,
+          "squared_l2": 134.00042724609375,
+          "tag": 3
+        },
+        {
+          "id": 11,
+          "squared_l2": 144.38818359375,
+          "tag": 3
+        },
+        {
+          "id": 779,
+          "squared_l2": 145.24520874023438,
+          "tag": 3
+        },
+        {
+          "id": 523,
+          "squared_l2": 146.29299926757812,
+          "tag": 3
+        },
+        {
+          "id": 1219,
+          "squared_l2": 147.19418334960938,
+          "tag": 3
+        },
+        {
+          "id": 433,
+          "squared_l2": 150.73434448242188,
+          "tag": 1
+        },
+        {
+          "id": 987,
+          "squared_l2": 154.85797119140625,
+          "tag": 3
+        },
+        {
+          "id": 1691,
+          "squared_l2": 157.29566955566406,
+          "tag": 3
+        },
+        {
+          "id": 857,
+          "squared_l2": 158.38619995117188,
+          "tag": 1
+        }
+      ],
+      "elapsed_ms": 0.082833
+    },
+    {
+      "kind": "live-sweep",
+      "rows": [
+        {
+          "algorithm": "hnsw",
+          "effort": 10,
+          "recall": 0.9875,
+          "p50_ms": 0.0068544999999999995,
+          "qps": 125613.34641805693,
+          "path": "hnsw"
+        },
+        {
+          "algorithm": "hnsw",
+          "effort": 24,
+          "recall": 0.9875,
+          "p50_ms": 0.011875,
+          "qps": 72645.3815698667,
+          "path": "hnsw"
+        },
+        {
+          "algorithm": "hnsw",
+          "effort": 64,
+          "recall": 1.0,
+          "p50_ms": 0.018146,
+          "qps": 52423.09368334486,
+          "path": "hnsw"
+        },
+        {
+          "algorithm": "hnsw",
+          "effort": 160,
+          "recall": 1.0,
+          "p50_ms": 0.032646,
+          "qps": 30348.610697505916,
+          "path": "hnsw"
+        },
+        {
+          "algorithm": "ivf",
+          "effort": 1,
+          "recall": 0.75625,
+          "p50_ms": 0.005062499999999999,
+          "qps": 201992.14755526377,
+          "path": "ivf"
+        },
+        {
+          "algorithm": "ivf",
+          "effort": 4,
+          "recall": 0.96875,
+          "p50_ms": 0.0051459999999999995,
+          "qps": 197022.497506434,
+          "path": "ivf"
+        },
+        {
+          "algorithm": "ivf",
+          "effort": 16,
+          "recall": 1.0,
+          "p50_ms": 0.007042,
+          "qps": 142328.49416453173,
+          "path": "ivf"
+        },
+        {
+          "algorithm": "ivf",
+          "effort": 32,
+          "recall": 1.0,
+          "p50_ms": 0.012209,
+          "qps": 81667.65348414627,
+          "path": "ivf"
+        }
+      ],
+      "queries_per_setting": 16,
+      "scope": "synthetic native search only; exact validation excluded; single warm sweep"
+    },
+    {
+      "kind": "query",
+      "path": "hnsw",
+      "recall": 1.0,
+      "neighbors": [
+        {
+          "id": 17,
+          "squared_l2": 0.0,
+          "tag": 1
+        },
+        {
+          "id": 577,
+          "squared_l2": 20.050260543823242,
+          "tag": 1
+        },
+        {
+          "id": 945,
+          "squared_l2": 27.15900421142578,
+          "tag": 1
+        },
+        {
+          "id": 1569,
+          "squared_l2": 28.303030014038086,
+          "tag": 1
+        },
+        {
+          "id": 1785,
+          "squared_l2": 28.436344146728516,
+          "tag": 1
+        },
+        {
+          "id": 1625,
+          "squared_l2": 28.505887985229492,
+          "tag": 1
+        },
+        {
+          "id": 857,
+          "squared_l2": 29.68876075744629,
+          "tag": 1
+        },
+        {
+          "id": 657,
+          "squared_l2": 30.724510192871094,
+          "tag": 1
+        },
+        {
+          "id": 1665,
+          "squared_l2": 31.293670654296875,
+          "tag": 1
+        },
+        {
+          "id": 1201,
+          "squared_l2": 32.20893859863281,
+          "tag": 1
+        }
+      ],
+      "elapsed_ms": 0.062208
+    },
+    {
+      "kind": "responsive",
+      "width": 390,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 768,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1024,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1440,
+      "no_overflow": true
+    }
+  ]
+}
